@@ -1,0 +1,118 @@
+
+
+/* vado a definire il tag corpo,
+e inserisco l'immagine di sfondo */
+body{
+background-image: url(background.jpg);
+background-size: 100% 100%;
+background-repeat: no-repeat;
+color: white;
+}
+
+/* Definisco la classe corpo e le sue caratteristiche,
+ essa è il contenitore virtuale delle sezioni del sito */
+
+.corpo{
+margin-left: 10%;
+margin-right:10%;
+margin-bottom: 20%;
+background-color: rgba(0, 0, 0, 0.5);
+text-align:center;
+padding-bottom: 10%;
+padding-top: 10%;
+border-radius: 2%;
+
+}
+
+/* Definisco la classe testa del Body,
+cioè dove in essa sono contenuti logo e titolo */
+.testa{
+display: inline-block;
+text-align: center;
+margin-bottom:1px;
+}
+
+/* Utilizzo molto gnerico,
+ma data la presenza di un unico hr1 nell'esercizio,
+ ho optato per tale soluzione */
+div h1{
+margin-bottom: 1px;
+padding-bottom: 1px;
+color: rgb(0,210,0);
+}
+
+/* Utilizzo molto gnerico,
+ma data la presenza di un unico hr2 nell'esercizio,
+ ho optato per tale soluzione */
+div h2{
+display: inline-block;
+margin-bottom: 1px;
+}
+
+/*
+Definisco la grandezza
+ dell'immagine presente nel blocco testa */
+
+.testa > img{
+width: 200px;
+height: 100px;
+}
+
+/* Definisco la classe
+che contiene al suo interno i bottoni selettivi */
+.navigazione{
+text-align: center;
+background-color: rgb(0,210,0);
+padding: 10px;
+margin-right: 10%;
+margin-left: 10%;
+}
+
+
+/* Definisco la classe con le sezioni
+in cui sono presenti i monopattini disponibili */
+.sezioni{
+text-align: left;
+margin-left: 10%;
+
+}
+
+/* Definisco gli span dopo sezioni, per evitare di usare br */
+.sezioni span{
+display: block;
+
+}
+
+.sezioni span::after{
+  display: block ;
+  content: 'Stato carica:';
+}
+
+.sezioni span::before{
+content: "\21A3";
+}
+
+/* Definisco la grandezza di un p generico,
+che utilizzo per la media carica */
+p{
+  width: 30%;
+  margin-top: 0.1%;
+  padding: 1%;
+  background-color: rgb(255,255,102);
+  border-radius: 5px;
+  }
+
+/* Definisco la classe per la carica full,
+cambiando solo le caratteristiche necessarie */
+
+.full{
+width: 60%;
+background-color: rgb(102,255,0);
+}
+
+/* Definisco la classe per la carica empty,
+cambiando solo le caratteristiche necessarie */
+.empty{
+width: 15%;
+background-color: rgb(203,50,52);
+}
